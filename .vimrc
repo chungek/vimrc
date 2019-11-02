@@ -1,6 +1,7 @@
-"look & feel 
+"look & feel
+colo peachpuff
 syntax on
-colorscheme murphy
+set hlsearch
 
 " for showing line numbers
 set number
@@ -14,7 +15,8 @@ set mouse=a
 
 " use filetype-based syntax highlighting, ftplugins, and indentation
 syntax enable
-filetype plugin indent on
+filetype plugin on
+set backspace=indent,eol,start
 
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -38,4 +40,5 @@ if !has('gui_running')
   set t_Co=256
 endif
 
+let g:airline_powerline_fonts = 1
 
